@@ -28,7 +28,8 @@
 
 - Go to Lutris, add a new game (top left corner) and set it up with the following details. After setting everything up, save the configuration
 
-```
+----------
+
 - Game info
     - Name: (whatever you want to call it)
     - Runner: Wine (Runs Windows games)
@@ -43,18 +44,21 @@
 - System options
     - Enable Feral GameMode: enable it if you want
     - Enable NVIDIA Prime Render Offload: enable if if you want/need
-    - Environment variables:
-    While these are not strictly necessary, these are the ones that are automatically set up by the Lutris installer, so lets set them just in case
-        - DXVK_LOG_LEVEL               | none
-        - DXVK_STATE_CACHE_PATH        | (path to your new folder)
-        - STAGING_SHARED_MEMORY        | 1
-        - WINE_LARGE_ADDRESS_AWARE     | 1
-        - __GL_SHADER_DISK_CACHE       | 1
-        - __GL_SHADER_DISK_CACHE_PATH  | (path to your new folder)
     - Pre-launch script: (path to your new folder)/launchhelper.sh
         - You need to enable "Show advanced options" to see this
         - Example: /home/idkwuu/Games/league-of-legends/launchscript.sh
-```
+    - Environment variables: While these are not strictly necessary, these are the ones that are automatically set up by the Lutris installer, so lets set them just in case
+
+Variable | Value
+--------|-----
+DXVK_LOG_LEVEL | none
+DXVK_STATE_CACHE_PATH | (path to your new folder)
+STAGING_SHARED_MEMORY | 1
+WINE_LARGE_ADDRESS_AWARE | 1
+\_\_GL_SHADER_DISK_CACHE | 1
+\_\_GL_SHADER_DISK_CACHE_PATH  | (path to your new folder)
+        
+----------
 
 - Now select the game in Lutris. On the bottom of the window, there should be a Wine logo, and to the right of it, a menu. Open it and click on Run EXE inside Wine prefix. Select the League of Legends installer
 - Wait a white for it to open. If it asks you to install Mono or Gecko, click Install. 
