@@ -64,15 +64,15 @@ WINE_LARGE_ADDRESS_AWARE | 1
 - Wait a white for it to open. If it asks you to install Mono or Gecko, click Install. 
     - If the installer never opens, try this step again. 
 - Now you should see the installer. 
-    - If you backed up your Riot Games folder, now it's the time to copy it back. Copy the Riot Games folder to `(path to your new folder)/drive_c` 
+    - If you backed up your Riot Games folder, now it's the time to copy it back. Copy the Riot Games folder to `(path to your new folder)/drive_c`
 - Click Install. Wait for it to installl/"repair". When the launcher opens, **DON'T LOG IN**: Just let it download the client/verify the files. 
 - Once that is over, close the launcher. Open the menu next to the Wine logo again and click on Kill all Wine processes (to make sure the launcher is closed)
 - Open the game through Lutris (click play or double click the game)
     - If you don't see the dialog about the abi.vsyscall32=0 sysctl config you either:
-          - Set your system to always use that config. You can check if you have set it up by running `sysctl -n abi.vsyscall32` in the terminal. 
-              - If if outputs 1, then you didn't set the script as executable, didn't add it to the config as the pre-launch script or set the path incorrectly there.
-              - If it outputs 0, then you're good to go.
-          - Didn't set the script as executable, didn't add it to the config as the pre-launch script or set the path incorrectly there.
+        - Set your system to always use that config. You can check if you have set it up by running `sysctl -n abi.vsyscall32` in the terminal. 
+            - If if outputs 1, then you didn't set the script as executable, didn't add it to the config as the pre-launch script or set the path incorrectly there.
+            - If it outputs 0, then you're good to go.
+        - Didn't set the script as executable, didn't add it to the config as the pre-launch script or set the path incorrectly there.
 - Now you can log in with your Riot account and open the game.
 
 And we're done! We now should be able to play the game again.
